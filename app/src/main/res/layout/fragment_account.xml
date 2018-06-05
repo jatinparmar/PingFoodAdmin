@@ -1,0 +1,71 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="project.com.cebs.pingfoodsadmin.AccountFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Profile"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:layout_margin="15dp"
+
+            />
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtemail"
+        android:inputType="textEmailAddress"
+        android:layout_margin="10dp"
+        android:hint="Email"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtfirstname"
+        android:inputType="textPersonName"
+        android:layout_margin="10dp"
+        android:hint="First Name"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtlastname"
+        android:inputType="textPersonName"
+        android:layout_margin="10dp"
+        android:hint="Last Name"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtphone"
+        android:inputType="phone"
+        android:hint="Contact Number"
+        android:layout_margin="10dp"
+        />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnUpdate"
+            android:text="Update Profile"
+            />
+    </LinearLayout>
+
+
+
+
+</FrameLayout>

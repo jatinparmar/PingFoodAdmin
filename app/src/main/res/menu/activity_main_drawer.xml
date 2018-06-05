@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_dashboard"
+            android:title="Dashboard"
+            android:checked="true"
+            />
+    </group>
+    <group android:id="@+id/nav_restaurant_group" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_restaurants"
+            android:icon="@drawable/ic_restaurants"
+            android:title="Restaurants" />
+    </group>
+
+    <group android:id="@+id/nav_orders_group" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/ic_order_restaurant"
+            android:title="Orders" />
+    </group>
+
+    <group android:id="@+id/nav_tracking_group" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_tracking"
+            android:icon="@drawable/ic_tracking"
+            android:title="Order Tracking" />
+    </group>
+    <group android:id="@+id/nav_account_group" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/ic_account"
+            android:title="Account" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_request"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Quotation Requests" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_menu_send"
+                android:title="About" />
+        </menu>
+    </item>
+
+</menu>

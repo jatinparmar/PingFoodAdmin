@@ -1,0 +1,87 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="project.com.cebs.pingfoodsadmin.AddRestaurantsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        >
+
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Restaurant Name"
+       android:id="@+id/txt_insert_restaurant_name"
+       android:inputType="text"
+
+       />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Restaurant Description"
+        android:id="@+id/txt_insert_restaurant_description"
+        android:layout_below="@id/txt_insert_restaurant_name"
+        android:inputType="text"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tag line 1"
+        android:inputType="text"
+        android:layout_below="@+id/txt_insert_restaurant_description"
+        android:id="@+id/txt_insert_restaurant_tagline1"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_insert_restaurant_tagline1"
+        android:inputType="text"
+        android:hint="Tag line 2"
+        android:id="@+id/txt_insert_restaurant_tagline2"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_insert_restaurant_tagline2"
+        android:hint="www.RestaurantName.com"
+        android:inputType="textWebEmailAddress"
+        android:id="@+id/txt_insert_restaurant_website"
+
+        />
+
+        <Button
+            android:id ="@+id/btn_add_restaurant_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_below="@id/txt_insert_restaurant_website"
+            android:text="Add Restaurants"
+            android:background="@drawable/button_rounded"
+            android:padding="15dp"
+            />
+        <Button
+            android:id ="@+id/btn_add_branches"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_below="@id/btn_add_restaurant_details"
+            android:text="Click here to add branch"
+            android:background="@drawable/button_rounded"
+            android:padding="15dp"
+            android:visibility="invisible"
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>
